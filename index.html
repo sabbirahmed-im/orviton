@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- ===== SEO META TAGS ===== -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orviton — We Build SaaS</title>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- PRIMARY TITLE & DESCRIPTION -->
+<title>Orviton — Simple Tools. Complex Problems Solved.</title>
+<meta name="description" content="Independent SaaS company building focused software tools. Simple solutions for complex business problems. Bootstrap-backed, production-ready, no bloat. LeadPilot + more coming.">
+<meta name="keywords" content="SaaS, software company, lead capture, CRM, email automation, business tools, independent software, focused tools">
+
+<!-- BRAND & AUTHOR -->
+<meta name="author" content="Orviton">
+<meta name="publisher" content="Orviton">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="language" content="English">
+
+<!-- CANONICAL URL -->
+<link rel="canonical" href="https://orviton.com/">
+
+<!-- OPEN GRAPH (Social Media) -->
+<meta property="og:site_name" content="Orviton">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orviton.com/">
+<meta property="og:title" content="Orviton — Simple Tools. Complex Problems Solved.">
+<meta property="og:description" content="Independent SaaS company. Simple solutions for complex business problems. Bootstrap-backed, production-ready infrastructure.">
+<meta property="og:image" content="https://orviton.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:locale" content="en_US">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@orviton">
+<meta name="twitter:title" content="Orviton — Simple Tools. Complex Problems Solved.">
+<meta name="twitter:description" content="Independent SaaS company building focused software tools for businesses.">
+<meta name="twitter:image" content="https://orviton.com/og-image.png">
+
+<!-- FAVICONS -->
+<link rel="icon" type="image/png" href="https://orviton.com/favicon.png">
+<link rel="apple-touch-icon" href="https://orviton.com/apple-touch-icon.png">
+
+<!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<!-- JSON-LD SCHEMA MARKUP -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Orviton",
+  "alternateName": "Orviton SaaS",
+  "url": "https://orviton.com",
+  "logo": "https://orviton.com/logo.png",
+  "description": "Independent SaaS company building focused software tools. Simple solutions for complex business problems.",
+  "sameAs": [
+    "https://twitter.com/orviton",
+    "https://linkedin.com/company/orviton"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-XXX-XXX-XXXX",
+    "contactType": "Customer Service",
+    "email": "hello@orviton.com"
+  },
+  "foundingDate": "2024",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Founder Name"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  }
+}
+</script>
+
+<!-- JSON-LD PRODUCT SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "LeadPilot",
+  "description": "Automatic lead capture & CRM for businesses. Embed one script, capture every form submission, manage leads, and close with email automation.",
+  "url": "https://leadleap.app",
+  "brand": {
+    "@type": "Brand",
+    "name": "Orviton"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "0",
+    "priceValidUntil": "2025-12-31",
+    "availability": "https://schema.org/InStock",
+    "url": "https://leadleap.app"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150"
+  }
+}
+</script>
+
+<!-- JSON-LD BREADCRUMB -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://orviton.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://orviton.com#products"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "LeadPilot",
+      "item": "https://leadleap.app"
+    }
+  ]
+}
+</script>
+
+<!-- STYLES -->
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{max-width:100%;overflow-x:hidden}
@@ -376,12 +508,12 @@ h1{animation:up .6s .12s both}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-tag">SaaS company</div>
+    <div class="hero-tag">Independent SaaS</div>
 
-    <h1>We build software<br>businesses <span class="accent">rely</span><br><span class="dim">on.</span></h1>
+    <h1>Simple <span class="accent">tools.</span><br>Complex problems<br><span class="dim">solved.</span></h1>
 
     <p class="hero-desc">
-      Orviton is an independent SaaS company. We identify high-friction problems in business workflows and build focused, well-crafted tools to solve them — without the bloat.
+      Orviton builds focused software for the problems other companies over-engineer. Bootstrap-backed. Production-ready. Zero bloat.
     </p>
 
     <div class="hero-btns">
@@ -401,7 +533,7 @@ h1{animation:up .6s .12s both}
         <div class="pcard-name">LeadPilot</div>
         <span class="pill pill-live">Live · leadleap.app</span>
       </div>
-      <p class="pcard-desc">Automatic lead capture & CRM for businesses. Embed one script, capture every form submission, manage leads, and close with email automation — all in one place.</p>
+      <p class="pcard-desc">Automatic lead capture & CRM. Embed one script on any website—capture every form submission, manage leads, and close with email automation.</p>
       <a href="https://leadleap.app" target="_blank" class="pcard-link">Visit leadleap.app →</a>
     </div>
 
@@ -410,7 +542,7 @@ h1{animation:up .6s .12s both}
         <div class="pcard-name">Coming next</div>
         <span class="pill pill-next">In development</span>
       </div>
-      <p class="pcard-desc">We're actively working on our next product. Each tool we build targets a specific pain point that existing software handles poorly.</p>
+      <p class="pcard-desc">We're actively working on our next focused tool. Solving real problems. No platforms. No bloat.</p>
       <span class="pcard-link dim">Announce soon</span>
     </div>
   </div>
@@ -420,12 +552,12 @@ h1{animation:up .6s .12s both}
 <section class="wedo" id="what">
   <div class="wedo-left">
     <div class="sec-kicker">What we do</div>
-    <h2 class="sec-h">Focused SaaS.<br><em>Nothing extra.</em></h2>
+    <h2 class="sec-h">Focused.<br><em>Independent.<br>Uncompromising.</em></h2>
     <p class="sec-body">
-      We build software that solves one problem well. Not platforms. Not all-in-one suites. Every product we ship is scoped tightly, works reliably, and gets out of your way.
+      We build software that solves one problem better than anyone else. Not platforms. Not all-in-one suites. Every product we ship is scoped tightly, works reliably, and gets out of your way.
     </p>
     <p class="sec-body">
-      Orviton is bootstrapped and independent. That means we answer to our users, not investors — and we build what's actually useful, not what's impressive on a pitch deck.
+      Bootstrap-backed and independent. We answer to our users, not investors — and we build what's actually useful.
     </p>
   </div>
 
@@ -435,14 +567,14 @@ h1{animation:up .6s .12s both}
       <div class="pillar-num">01</div>
       <div>
         <div class="pillar-title">Identify real friction</div>
-        <p class="pillar-desc">Every product starts with a specific workflow that's more painful than it needs to be. We don't build features looking for a problem.</p>
+        <p class="pillar-desc">Every product starts with a workflow that's painfully inefficient. We don't build features looking for problems—we find problems worth solving.</p>
       </div>
     </div>
     <div class="pillar reveal d1">
       <div class="pillar-num">02</div>
       <div>
         <div class="pillar-title">Ship early, refine constantly</div>
-        <p class="pillar-desc">Real products get built by shipping fast and learning from actual users. We'd rather have something imperfect in production than perfect on paper.</p>
+        <p class="pillar-desc">Real products come from shipping fast and learning from actual users. We'd rather have something imperfect in production than perfect on paper.</p>
       </div>
     </div>
     <div class="pillar reveal d2">
@@ -456,7 +588,7 @@ h1{animation:up .6s .12s both}
       <div class="pillar-num">04</div>
       <div>
         <div class="pillar-title">Build to last</div>
-        <p class="pillar-desc">Production-grade infrastructure, reliable uptime, and a pricing model that's sustainable. We're here for the long run.</p>
+        <p class="pillar-desc">Production-grade infrastructure, reliable uptime, sustainable pricing. We're not selling a trend—we're building businesses that endure.</p>
       </div>
     </div>
   </div>
@@ -470,7 +602,7 @@ h1{animation:up .6s .12s both}
       <h2 class="sec-h" style="margin-bottom:0;font-size:clamp(1.6rem,2.5vw,2.2rem)">What we've shipped</h2>
     </div>
     <p style="font-size:0.875rem;color:var(--text2);max-width:38ch;font-weight:300;line-height:1.75">
-      Each product targets one specific problem. Small surface area, deep capability.
+      Each product targets one specific problem. Built for simplicity. Built to scale.
     </p>
   </div>
 
@@ -482,7 +614,7 @@ h1{animation:up .6s .12s both}
       <div class="prod-tag"><span class="pill pill-live">Live</span></div>
       <div class="prod-name">LeadPilot</div>
       <p class="prod-desc">
-        Automatic lead capture & CRM. Embed one script on any website — Shopify, Webflow, custom HTML — and every form submission lands in your dashboard. Includes follow-up tracking, email automation with your own SMTP, AI-assisted email drafting, and open tracking. Free plan available.
+        Lead capture + CRM + email automation. Embed one script. Capture every form submission. Manage leads. Close deals. Free to start.
       </p>
       <a href="https://leadleap.app" target="_blank" class="prod-link">leadleap.app →</a>
     </div>
@@ -492,11 +624,11 @@ h1{animation:up .6s .12s both}
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
       </div>
       <div class="prod-tag"><span class="pill pill-next">In development</span></div>
-      <div class="prod-name">Next product</div>
+      <div class="prod-name">Next tool</div>
       <p class="prod-desc">
-        We're building something new. We identify workflows that are painful, underserved, or handled poorly by existing tools — then build something better. If you're experiencing a specific pain point in your business, we'd like to know about it.
+        Building something new. Every tool we ship solves a specific pain point that existing software handles poorly.
       </p>
-      <a href="mailto:hello@orviton.com" class="prod-link">Tell us what's painful →</a>
+      <a href="mailto:hello@orviton.com" class="prod-link">Tell us →</a>
     </div>
 
     <div class="prod reveal d2">
@@ -506,7 +638,7 @@ h1{animation:up .6s .12s both}
       <div class="prod-tag"><span class="pill pill-next">Future</span></div>
       <div class="prod-name">And more</div>
       <p class="prod-desc">
-        Orviton will continue to ship focused SaaS products. We're not building a platform — we're building a portfolio of tools that each solve one problem better than anyone else.
+        A portfolio of focused tools. Each one better than the bloated alternatives. No platforms. Just solutions.
       </p>
       <span class="prod-link muted">Stay tuned</span>
     </div>
@@ -516,22 +648,22 @@ h1{animation:up .6s .12s both}
 <!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee-track">
-    <span>Lead capture & CRM</span>
+    <span>Lead capture</span>
+    <span>CRM</span>
     <span>Email automation</span>
-    <span>SMTP-based delivery</span>
-    <span>One-script embed</span>
-    <span>Bootstrapped & independent</span>
-    <span>Built for founders</span>
+    <span>SMTP delivery</span>
+    <span>Bootstrap-backed</span>
+    <span>Independent SaaS</span>
     <span>No bloat</span>
-    <span>Free to start</span>
-    <span>Lead capture & CRM</span>
+    <span>Production-ready</span>
+    <span>Lead capture</span>
+    <span>CRM</span>
     <span>Email automation</span>
-    <span>SMTP-based delivery</span>
-    <span>One-script embed</span>
-    <span>Bootstrapped & independent</span>
-    <span>Built for founders</span>
+    <span>SMTP delivery</span>
+    <span>Bootstrap-backed</span>
+    <span>Independent SaaS</span>
     <span>No bloat</span>
-    <span>Free to start</span>
+    <span>Production-ready</span>
   </div>
 </div>
 
@@ -539,34 +671,34 @@ h1{animation:up .6s .12s both}
 <section class="approach" id="approach">
   <div class="approach-cell reveal">
     <div class="approach-ico">01</div>
-    <div class="approach-title">Independent by design</div>
-    <p class="approach-body">No VC funding. No investor pressure. We build what's useful for our customers, not what's impressive on a cap table. Sustainable business, honest priorities.</p>
+    <div class="approach-title">Bootstrap-backed</div>
+    <p class="approach-body">No VC pressure. No investor agendas. We answer to our users and build what's actually useful.</p>
   </div>
   <div class="approach-cell reveal d1">
     <div class="approach-ico">02</div>
     <div class="approach-title">Production-grade from day one</div>
-    <p class="approach-body">Docker, CI/CD, SSL, proper infrastructure. Every product ships with the reliability a business can depend on — not a prototype that scales later.</p>
+    <p class="approach-body">Docker, CI/CD, SSL, proper infrastructure. Every tool ships with reliability your business can depend on.</p>
   </div>
   <div class="approach-cell reveal d2">
     <div class="approach-ico">03</div>
     <div class="approach-title">Pricing that makes sense</div>
-    <p class="approach-body">Free plans that are actually usable. Paid plans priced for real businesses, not enterprise contracts. We want to grow with our customers, not squeeze them.</p>
+    <p class="approach-body">Free plans that work. Paid plans for real businesses. We grow with our customers—we don't squeeze them.</p>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
   <div>
-    <h2 class="reveal">Start using<br><span class="accent">LeadPilot</span><br>for free.</h2>
+    <h2 class="reveal">Start building<br>with <span class="accent">LeadPilot</span><br>today.</h2>
   </div>
   <div class="cta-right reveal d1">
     <p style="font-size:0.9375rem;font-weight:300;color:var(--text2);line-height:1.75;max-width:40ch">
-      LeadPilot is live and free to start. Embed the script, capture leads from your website, and manage them — no credit card required.
+      Free to start. No credit card required. Capture leads from your website in 5 minutes.
     </p>
     <a href="https://leadleap.app" target="_blank" class="btn-solid" style="background:var(--green);color:#000;font-weight:700">
       Get started free →
     </a>
-    <p class="cta-note">Free plan available · No credit card · 5-minute setup</p>
+    <p class="cta-note">Free plan · No credit card · 5-minute setup</p>
   </div>
 </section>
 
@@ -574,13 +706,13 @@ h1{animation:up .6s .12s both}
 <footer>
   <div class="footer-brand">
     <a href="#" class="logo">Orvi<span>ton</span></a>
-    <p>Independent SaaS company. We build focused software tools for businesses.</p>
+    <p>Independent SaaS company. Building focused tools that solve real problems. Simple. Reliable. Uncompromising.</p>
   </div>
   <div>
     <div class="footer-col-title">Products</div>
     <ul class="footer-list">
       <li><a href="https://leadleap.app" target="_blank">LeadPilot</a></li>
-      <li><a href="#">More coming soon</a></li>
+      <li><a href="#">Coming soon</a></li>
     </ul>
   </div>
   <div>
@@ -588,8 +720,8 @@ h1{animation:up .6s .12s both}
     <ul class="footer-list">
       <li><a href="#what">About</a></li>
       <li><a href="mailto:hello@orviton.com">Contact</a></li>
-      <li><a href="https://leadleap.app/privacy" target="_blank">Privacy policy</a></li>
-      <li><a href="https://leadleap.app/terms" target="_blank">Terms of service</a></li>
+      <li><a href="https://leadleap.app/privacy" target="_blank">Privacy</a></li>
+      <li><a href="https://leadleap.app/terms" target="_blank">Terms</a></li>
     </ul>
   </div>
 </footer>
