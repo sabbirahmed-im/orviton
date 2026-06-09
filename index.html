@@ -20,13 +20,23 @@
 <!-- CANONICAL URL -->
 <link rel="canonical" href="https://orviton.com/">
 
+<!-- ===== FAVICON & TOUCH ICONS ===== -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/public/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Orviton">
+<meta name="theme-color" content="#00d492">
+<link rel="manifest" href="/public/site.webmanifest">
+
 <!-- OPEN GRAPH (Social Media) -->
 <meta property="og:site_name" content="Orviton">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://orviton.com/">
 <meta property="og:title" content="Orviton — Simple Tools. Complex Problems Solved.">
 <meta property="og:description" content="Independent SaaS company. Simple solutions for complex business problems. Bootstrap-backed, production-ready infrastructure.">
-<meta property="og:image" content="https://orviton.com/og-image.png">
+<meta property="og:image" content="https://orviton.com/public/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
@@ -37,11 +47,7 @@
 <meta name="twitter:site" content="@orviton">
 <meta name="twitter:title" content="Orviton — Simple Tools. Complex Problems Solved.">
 <meta name="twitter:description" content="Independent SaaS company building focused software tools for businesses.">
-<meta name="twitter:image" content="https://orviton.com/og-image.png">
-
-<!-- FAVICONS -->
-<link rel="icon" type="image/png" href="https://orviton.com/favicon.png">
-<link rel="apple-touch-icon" href="https://orviton.com/apple-touch-icon.png">
+<meta name="twitter:image" content="https://orviton.com/public/og-image.png">
 
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,17 +70,10 @@
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+1-XXX-XXX-XXXX",
-    "contactType": "Customer Service",
-    "email": "hello@orviton.com"
+    "email": "hello@orviton.com",
+    "contactType": "Customer Service"
   },
   "foundingDate": "2024",
-  "founders": [
-    {
-      "@type": "Person",
-      "name": "Founder Name"
-    }
-  ],
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "US"
@@ -98,43 +97,8 @@
     "@type": "Offer",
     "priceCurrency": "USD",
     "price": "0",
-    "priceValidUntil": "2025-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://leadleap.app"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "150"
+    "availability": "https://schema.org/InStock"
   }
-}
-</script>
-
-<!-- JSON-LD BREADCRUMB -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://orviton.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Products",
-      "item": "https://orviton.com#products"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "LeadPilot",
-      "item": "https://leadleap.app"
-    }
-  ]
 }
 </script>
 
@@ -255,7 +219,6 @@ h1 .dim{color:var(--text3)}
 }
 .btn-ghost:hover{color:var(--text);border-color:rgba(255,255,255,0.15)}
 
-/* HERO RIGHT — product cards */
 .hero-right{
   padding:5rem 4vw;
   display:flex;flex-direction:column;justify-content:center;gap:1rem;
@@ -297,7 +260,6 @@ h1 .dim{color:var(--text3)}
 .pcard-link:hover{gap:0.5rem}
 .pcard-link.dim{color:var(--text3);cursor:default}
 
-/* WHAT WE DO */
 .wedo{
   display:grid;grid-template-columns:5fr 7fr;
   border-bottom:1px solid var(--border);
@@ -344,7 +306,6 @@ h1 .dim{color:var(--text3)}
 }
 .pillar-desc{font-size:0.8375rem;font-weight:300;color:var(--text2);line-height:1.65}
 
-/* PRODUCTS FULL */
 .products{border-bottom:1px solid var(--border)}
 .products-head{
   padding:4rem 5vw 3rem;
@@ -383,7 +344,6 @@ h1 .dim{color:var(--text3)}
 .prod-link:hover{gap:0.55rem}
 .prod-link.muted{color:var(--text3)}
 
-/* MARQUEE */
 .marquee{
   border-top:1px solid var(--border);border-bottom:1px solid var(--border);
   padding:0.9rem 0;overflow:hidden;background:var(--bg2);
@@ -398,7 +358,6 @@ h1 .dim{color:var(--text3)}
 .marquee-track span::after{content:'·';opacity:0.4}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* APPROACH */
 .approach{
   display:grid;grid-template-columns:1fr 1fr 1fr;
   border-bottom:1px solid var(--border);
@@ -418,7 +377,6 @@ h1 .dim{color:var(--text3)}
 }
 .approach-body{font-size:0.8375rem;font-weight:300;color:var(--text2);line-height:1.7}
 
-/* CTA */
 .cta{
   padding:7rem 5vw;
   display:grid;grid-template-columns:1fr 1fr;gap:5rem;
@@ -434,7 +392,6 @@ h1 .dim{color:var(--text3)}
 .cta-right{display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
 .cta-note{font-size:0.8rem;font-weight:300;color:var(--text3)}
 
-/* FOOTER */
 footer{
   padding:3.5rem 5vw;
   display:grid;grid-template-columns:1.5fr 1fr 1fr;
@@ -461,12 +418,10 @@ footer{
 .footer-inline a{font-size:0.75rem;color:var(--text3);text-decoration:none;transition:color .15s}
 .footer-inline a:hover{color:var(--text2)}
 
-/* SCROLL REVEAL */
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
 .reveal.in{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}
 
-/* HERO LOAD */
 .hero-tag{animation:up .5s .05s both}
 h1{animation:up .6s .12s both}
 .hero-desc{animation:up .6s .2s both}
@@ -474,7 +429,6 @@ h1{animation:up .6s .12s both}
 .hero-right{animation:up .7s .2s both}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 
-/* RESPONSIVE */
 @media(max-width:920px){
   .hero{grid-template-columns:1fr}
   .hero-right{display:none}
@@ -505,17 +459,13 @@ h1{animation:up .6s .12s both}
   <a href="https://leadleap.app" target="_blank" class="nav-cta">Try LeadLeap →</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag">Independent SaaS</div>
-
     <h1>Simple <span class="accent">tools.</span><br>Complex problems<br><span class="dim">solved.</span></h1>
-
     <p class="hero-desc">
       Orviton builds focused software for the problems other companies over-engineer. Bootstrap-backed. Production-ready. Zero bloat.
     </p>
-
     <div class="hero-btns">
       <a href="#products" class="btn-solid">
         Our products
@@ -527,7 +477,6 @@ h1{animation:up .6s .12s both}
 
   <div class="hero-right">
     <div class="hero-right-label">Our products</div>
-
     <div class="pcard featured">
       <div class="pcard-top">
         <div class="pcard-name">LeadPilot</div>
@@ -536,7 +485,6 @@ h1{animation:up .6s .12s both}
       <p class="pcard-desc">Automatic lead capture & CRM. Embed one script on any website—capture every form submission, manage leads, and close with email automation.</p>
       <a href="https://leadleap.app" target="_blank" class="pcard-link">Visit leadleap.app →</a>
     </div>
-
     <div class="pcard">
       <div class="pcard-top">
         <div class="pcard-name">Coming next</div>
@@ -548,19 +496,13 @@ h1{animation:up .6s .12s both}
   </div>
 </section>
 
-<!-- WHAT WE DO -->
 <section class="wedo" id="what">
   <div class="wedo-left">
     <div class="sec-kicker">What we do</div>
     <h2 class="sec-h">Focused.<br><em>Independent.<br>Uncompromising.</em></h2>
-    <p class="sec-body">
-      We build software that solves one problem better than anyone else. Not platforms. Not all-in-one suites. Every product we ship is scoped tightly, works reliably, and gets out of your way.
-    </p>
-    <p class="sec-body">
-      Bootstrap-backed and independent. We answer to our users, not investors — and we build what's actually useful.
-    </p>
+    <p class="sec-body">We build software that solves one problem better than anyone else. Not platforms. Not all-in-one suites. Every product we ship is scoped tightly, works reliably, and gets out of your way.</p>
+    <p class="sec-body">Bootstrap-backed and independent. We answer to our users, not investors — and we build what's actually useful.</p>
   </div>
-
   <div class="wedo-right">
     <div class="sec-kicker" style="padding-top:0">How we think</div>
     <div class="pillar reveal">
@@ -594,7 +536,6 @@ h1{animation:up .6s .12s both}
   </div>
 </section>
 
-<!-- PRODUCTS -->
 <section class="products" id="products">
   <div class="products-head">
     <div>
@@ -605,7 +546,6 @@ h1{animation:up .6s .12s both}
       Each product targets one specific problem. Built for simplicity. Built to scale.
     </p>
   </div>
-
   <div class="products-grid">
     <div class="prod reveal">
       <div class="prod-ico">
@@ -613,39 +553,30 @@ h1{animation:up .6s .12s both}
       </div>
       <div class="prod-tag"><span class="pill pill-live">Live</span></div>
       <div class="prod-name">LeadPilot</div>
-      <p class="prod-desc">
-        Lead capture + CRM + email automation. Embed one script. Capture every form submission. Manage leads. Close deals. Free to start.
-      </p>
+      <p class="prod-desc">Lead capture + CRM + email automation. Embed one script. Capture every form submission. Manage leads. Close deals. Free to start.</p>
       <a href="https://leadleap.app" target="_blank" class="prod-link">leadleap.app →</a>
     </div>
-
     <div class="prod reveal d1" style="background:var(--bg2)">
       <div class="prod-ico">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
       </div>
       <div class="prod-tag"><span class="pill pill-next">In development</span></div>
       <div class="prod-name">Next tool</div>
-      <p class="prod-desc">
-        Building something new. Every tool we ship solves a specific pain point that existing software handles poorly.
-      </p>
+      <p class="prod-desc">Building something new. Every tool we ship solves a specific pain point that existing software handles poorly.</p>
       <a href="mailto:hello@orviton.com" class="prod-link">Tell us →</a>
     </div>
-
     <div class="prod reveal d2">
       <div class="prod-ico" style="border-style:dashed;background:transparent">
         <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </div>
       <div class="prod-tag"><span class="pill pill-next">Future</span></div>
       <div class="prod-name">And more</div>
-      <p class="prod-desc">
-        A portfolio of focused tools. Each one better than the bloated alternatives. No platforms. Just solutions.
-      </p>
+      <p class="prod-desc">A portfolio of focused tools. Each one better than the bloated alternatives. No platforms. Just solutions.</p>
       <span class="prod-link muted">Stay tuned</span>
     </div>
   </div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee-track">
     <span>Lead capture</span>
@@ -667,7 +598,6 @@ h1{animation:up .6s .12s both}
   </div>
 </div>
 
-<!-- APPROACH -->
 <section class="approach" id="approach">
   <div class="approach-cell reveal">
     <div class="approach-ico">01</div>
@@ -686,7 +616,6 @@ h1{animation:up .6s .12s both}
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
   <div>
     <h2 class="reveal">Start building<br>with <span class="accent">LeadPilot</span><br>today.</h2>
@@ -702,7 +631,6 @@ h1{animation:up .6s .12s both}
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-brand">
     <a href="#" class="logo">Orvi<span>ton</span></a>
