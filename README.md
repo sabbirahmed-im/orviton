@@ -1,10 +1,10 @@
-# Orviton — Independent Software Company
+# Orviton: Independent Software Company
 
 Building focused software that solves real business problems.
 
 Orviton is an independent software company building practical,
 reliable software products for businesses. We build focused
-tools that solve specific problems — without unnecessary
+tools that solve specific problems, without unnecessary
 complexity, bloat, or compromise.
 
 Bootstrap-backed. Production-ready. Built to last.
@@ -23,7 +23,7 @@ and solves one problem better than anyone else.
 
 ## Products
 
-### LeadLeap — Lead Capture & Abandoned Form Recovery
+### LeadLeap: Lead Capture & Abandoned Form Recovery
 
 Most businesses lose potential customers every day because
 visitors leave a website before submitting a contact form.
@@ -32,17 +32,17 @@ These abandoned leads disappear without a trace.
 LeadLeap fixes this.
 
 LeadLeap is a real-time lead capture and automated lead
-recovery platform that captures visitor information the
-moment they start typing into any website form — no form
-submission required. If the visitor leaves, an automated
-follow-up email is sent instantly to recover that lead.
+recovery tool that captures visitor information the moment
+they start typing into any website form, no form submission
+required. If the visitor leaves, an automated follow-up email
+goes out instantly to try and recover that lead.
 
 Key features:
 - Real-time lead capture without form submission
 - Automated abandoned lead recovery
-- Bulk email automation with own SMTP
+- Bulk email automation with your own SMTP
 - AI-powered follow-up messages
-- Works with any website — one script install
+- Works with any website, one script install
 
 Visit: [leadleap.app](https://leadleap.app)
 
@@ -56,29 +56,29 @@ Visit: [leadleap.app](https://leadleap.app)
 - Build for long-term value, not short-term hype
 
 Every feature we release exists for a reason.
-Every improvement is driven by real user feedback.
+Every improvement comes from real user feedback.
 
 ---
 
 ## About
 
-Orviton is founded and led by Sabbir Ahmed — software
-engineer and SaaS builder based in Bangladesh.
+Orviton is founded and led by Sabbir Ahmed, a software
+engineer and product builder based in Bangladesh.
 
-Our mission: build software that businesses genuinely enjoy
-using — practical, reliable, and designed to solve problems
-that matter.
+Our mission is simple: build software that businesses
+genuinely enjoy using, practical, reliable, and designed
+to solve problems that matter.
 
-This is the foundation for what is next.
+This is the foundation for what comes next.
 
 ---
 
 ## Keywords
 
-Independent Software Company, SaaS Company, Business Software,
-Lead Capture Software, Abandoned Form Recovery, Real-Time Lead
-Capture, Lead Generation SaaS, Email Automation, Own SMTP,
-Bulk Email Automation, Orviton, LeadLeap, Sabbir Ahmed
+Independent Software Company, Business Software, Lead Capture
+Software, Abandoned Form Recovery, Real-Time Lead Capture,
+Lead Generation Software, Email Automation, Own SMTP, Bulk
+Email Automation, Orviton, LeadLeap, Sabbir Ahmed
 
 ---
 
