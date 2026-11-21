@@ -1,1212 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- ===== SEO META TAGS ===== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- PRIMARY TITLE & DESCRIPTION -->
-    <title>Orviton: Simple Tools, Complex Problems Solved.</title>
-    <meta name="description" content="Independent software company building focused tools. Simple solutions for complex business problems. Bootstrap-backed, production-ready, no bloat. LeadLeap + ChurnPit + more coming.">
-    <meta name="keywords" content="software company, lead capture, CRM, email automation, churn detection, business tools, independent software, focused tools">
-
-    <!-- BRAND & AUTHOR -->
-    <meta name="author" content="Orviton">
-    <meta name="publisher" content="Orviton">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="language" content="English">
-
-    <!-- CANONICAL URL -->
-    <link rel="canonical" href="https://orviton.com/">
-
-    <!-- ===== FAVICON & TOUCH ICONS ===== -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Orviton">
-    <meta name="theme-color" content="#00d492">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- OPEN GRAPH (Social Media) -->
-    <meta property="og:site_name" content="Orviton">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://orviton.com/">
-    <meta property="og:title" content="Orviton: Simple Tools, Complex Problems Solved.">
-    <meta property="og:description" content="Independent software company. Simple solutions for complex business problems. Bootstrap-backed, production-ready infrastructure.">
-    <meta property="og:image" content="https://orviton.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:locale" content="en_US">
-
-    <!-- TWITTER CARD -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@orviton">
-    <meta name="twitter:title" content="Orviton: Simple Tools, Complex Problems Solved.">
-    <meta name="twitter:description" content="Independent software company building focused tools for businesses.">
-    <meta name="twitter:image" content="https://orviton.com/og-image.png">
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-
-    <!-- JSON-LD SCHEMA MARKUP -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Orviton",
-            "url": "https://orviton.com",
-            "logo": "https://orviton.com/logo.png",
-            "description": "Independent software company building focused tools. Simple solutions for complex business problems.",
-            "foundingDate": "2024",
-            "founder": {
-                "@type": "Person",
-                "name": "Sabbir Ahmed",
-                "url": "https://www.linkedin.com/in/sabbirr-ahmdd"
-            },
-            "sameAs": [
-                "https://www.linkedin.com/in/sabbirr-ahmdd",
-                "https://github.com/sabbirr-ahmdd",
-                "https://x.com/sabbirr_ahmdd",
-                "https://medium.com/@sabbirr_ahmdd",
-                "https://dev.to/sabbirr_ahmdd",
-                "https://www.reddit.com/user/sabbirr_ahmdd",
-                "https://www.crunchbase.com/organization/orviton"
-            ],
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "email": "hello@orviton.com",
-                "contactType": "Customer Service"
-            },
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "BD"
-            }
-        }
-    </script>
-    <!-- JSON-LD PRODUCT SCHEMA: LEADLEAP -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": "LeadLeap",
-            "description": "Automatic lead capture & CRM for businesses. Embed one script, capture every form submission, manage leads, and close with email automation.",
-            "url": "https://leadleap.app",
-            "brand": {
-                "@type": "Brand",
-                "name": "Orviton"
-            },
-            "offers": {
-                "@type": "Offer",
-                "priceCurrency": "USD",
-                "price": "0",
-                "availability": "https://schema.org/InStock"
-            }
-        }
-    </script>
-    <!-- JSON-LD PRODUCT SCHEMA: CHURNPIT -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": "ChurnPit",
-            "description": "AI churn detection software that emails you reports and high risk customer data directly, no dashboard required.",
-            "url": "https://churnpit.orviton.com",
-            "brand": {
-                "@type": "Brand",
-                "name": "Orviton"
-            },
-            "offers": {
-                "@type": "Offer",
-                "priceCurrency": "USD",
-                "price": "0",
-                "availability": "https://schema.org/PreOrder"
-            }
-        }
-    </script>
-
-    <!-- STYLES -->
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0
-        }
-        
-        html,
-        body {
-            max-width: 100%;
-            overflow-x: hidden
-        }
-        
-         :root {
-            --bg: #080808;
-            --bg2: #111111;
-            --bg3: #181818;
-            --border: rgba(255, 255, 255, 0.07);
-            --border2: rgba(255, 255, 255, 0.04);
-            --text: #f0ede8;
-            --text2: rgba(240, 237, 232, 0.55);
-            --text3: rgba(240, 237, 232, 0.28);
-            --green: #00d492;
-            --green-dim: rgba(0, 212, 146, 0.1);
-            --green-border: rgba(0, 212, 146, 0.2);
-            --head: 'Syne', sans-serif;
-            --body: 'DM Sans', sans-serif;
-        }
-        
-        html {
-            scroll-behavior: smooth
-        }
-        
-        body {
-            font-family: var(--body);
-            background: var(--bg);
-            color: var(--text);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased
-        }
-        /* NAV */
-        
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 5vw;
-            border-bottom: 1px solid var(--border);
-            background: rgba(8, 8, 8, 0.85);
-            backdrop-filter: blur(20px);
-        }
-        
-        .logo {
-            font-family: var(--head);
-            font-size: 1.2rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            color: var(--text);
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--green)
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 0;
-            list-style: none
-        }
-        
-        .nav-links a {
-            font-size: 0.8rem;
-            font-weight: 400;
-            color: var(--text2);
-            text-decoration: none;
-            padding: 0 1.2rem;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            border-left: 1px solid var(--border2);
-            transition: color .15s, background .15s;
-            letter-spacing: 0.01em;
-        }
-        
-        .nav-links a:hover {
-            color: var(--text);
-            background: rgba(255, 255, 255, 0.03)
-        }
-        
-        .nav-cta {
-            font-size: 0.8rem;
-            font-weight: 600;
-            background: var(--green);
-            color: #000;
-            padding: 0.5rem 1.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: opacity .15s, transform .15s;
-            letter-spacing: -0.01em;
-        }
-        
-        .nav-cta:hover {
-            opacity: 0.88;
-            transform: translateY(-1px)
-        }
-        /* HERO */
-        
-        .hero {
-            min-height: 100vh;
-            padding-top: 60px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .hero-left {
-            padding: 5rem 5vw 5rem calc(5vw);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-right: 1px solid var(--border);
-        }
-        
-        .hero-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--green);
-            margin-bottom: 2.5rem;
-        }
-        
-        .hero-tag::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--green);
-            box-shadow: 0 0 0 3px var(--green-dim);
-            animation: blink 2s ease infinite;
-        }
-        
-        @keyframes blink {
-            0%,
-            100% {
-                opacity: 1
-            }
-            50% {
-                opacity: 0.4
-            }
-        }
-        
-        h1 {
-            font-family: var(--head);
-            font-size: clamp(2.8rem, 5.5vw, 5rem);
-            font-weight: 800;
-            letter-spacing: -0.04em;
-            line-height: 1.02;
-            color: var(--text);
-            max-width: 15ch;
-        }
-        
-        h1 .accent {
-            color: var(--green)
-        }
-        
-        h1 .dim {
-            color: var(--text3)
-        }
-        
-        .hero-desc {
-            margin-top: 2rem;
-            font-size: 1rem;
-            font-weight: 300;
-            color: var(--text2);
-            line-height: 1.8;
-            max-width: 46ch;
-        }
-        
-        .hero-btns {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 2.75rem;
-            flex-wrap: wrap;
-        }
-        
-        .btn-solid {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: var(--text);
-            color: var(--bg);
-            font-size: 0.875rem;
-            font-weight: 600;
-            padding: 0.75rem 1.5rem;
-            border-radius: 7px;
-            text-decoration: none;
-            transition: opacity .15s, transform .15s;
-        }
-        
-        .btn-solid:hover {
-            opacity: 0.88;
-            transform: translateY(-1px)
-        }
-        
-        .btn-ghost {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            color: var(--text2);
-            font-size: 0.875rem;
-            font-weight: 400;
-            text-decoration: none;
-            transition: color .15s;
-            border: 1px solid var(--border);
-            padding: 0.75rem 1.4rem;
-            border-radius: 7px;
-        }
-        
-        .btn-ghost:hover {
-            color: var(--text);
-            border-color: rgba(255, 255, 255, 0.15)
-        }
-        
-        .hero-right {
-            padding: 5rem 4vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
-            background: var(--bg2);
-        }
-        
-        .hero-right-label {
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: var(--text3);
-            margin-bottom: 0.5rem;
-        }
-        
-        .pcard {
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.75rem;
-            background: var(--bg);
-            transition: border-color .2s, background .2s;
-            cursor: default;
-        }
-        
-        .pcard:hover {
-            border-color: rgba(255, 255, 255, 0.13);
-            background: var(--bg3)
-        }
-        
-        .pcard.featured {
-            border-color: var(--green-border);
-            background: var(--bg3)
-        }
-        
-        .pcard-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 1rem
-        }
-        
-        .pcard-name {
-            font-family: var(--head);
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-        }
-        
-        .pill {
-            font-size: 0.65rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            padding: 0.25rem 0.7rem;
-            border-radius: 100px;
-        }
-        
-        .pill-live {
-            background: rgba(0, 212, 146, 0.12);
-            color: var(--green);
-            border: 1px solid var(--green-border)
-        }
-        
-        .pill-next {
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--text3);
-            border: 1px solid var(--border)
-        }
-        
-        .pcard-desc {
-            font-size: 0.8375rem;
-            font-weight: 300;
-            color: var(--text2);
-            line-height: 1.7;
-            margin-bottom: 1.2rem;
-        }
-        
-        .pcard-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--green);
-            text-decoration: none;
-            transition: gap .15s;
-        }
-        
-        .pcard-link:hover {
-            gap: 0.5rem
-        }
-        
-        .pcard-link.dim {
-            color: var(--text3);
-            cursor: default
-        }
-        
-        .wedo {
-            display: grid;
-            grid-template-columns: 5fr 7fr;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .wedo-left {
-            padding: 5.5rem 5vw;
-            border-right: 1px solid var(--border);
-        }
-        
-        .wedo-right {
-            padding: 5.5rem 4vw;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-        }
-        
-        .sec-kicker {
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: var(--green);
-            margin-bottom: 1.5rem;
-        }
-        
-        .sec-h {
-            font-family: var(--head);
-            font-size: clamp(1.8rem, 3vw, 2.75rem);
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 1.08;
-            margin-bottom: 1.5rem;
-            max-width: 22ch;
-        }
-        
-        .sec-h em {
-            font-style: normal;
-            color: var(--text2)
-        }
-        
-        .sec-body {
-            font-size: 0.9375rem;
-            font-weight: 300;
-            color: var(--text2);
-            line-height: 1.8;
-            max-width: 46ch;
-        }
-        
-        .sec-body+.sec-body {
-            margin-top: 1.1rem
-        }
-        
-        .pillar {
-            display: grid;
-            grid-template-columns: 2.5rem 1fr;
-            gap: 1.25rem;
-            padding: 1.75rem 0;
-            border-top: 1px solid var(--border);
-            align-items: start;
-        }
-        
-        .pillar:last-child {
-            border-bottom: 1px solid var(--border)
-        }
-        
-        .pillar-num {
-            font-family: var(--head);
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--text3);
-            padding-top: 0.15rem;
-            letter-spacing: 0.05em;
-        }
-        
-        .pillar-title {
-            font-size: 0.9375rem;
-            font-weight: 600;
-            margin-bottom: 0.35rem;
-            letter-spacing: -0.01em;
-        }
-        
-        .pillar-desc {
-            font-size: 0.8375rem;
-            font-weight: 300;
-            color: var(--text2);
-            line-height: 1.65
-        }
-        
-        .products {
-            border-bottom: 1px solid var(--border)
-        }
-        
-        .products-head {
-            padding: 4rem 5vw 3rem;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr)
-        }
-        
-        .prod {
-            padding: 3rem 3vw;
-            border-right: 1px solid var(--border);
-            transition: background .2s;
-        }
-        
-        .prod:hover {
-            background: var(--bg2)
-        }
-        
-        .prod:last-child {
-            border-right: none
-        }
-        
-        .prod-ico {
-            width: 42px;
-            height: 42px;
-            border: 1px solid var(--border);
-            border-radius: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 2rem;
-            background: var(--bg2);
-        }
-        
-        .prod-ico svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--text2);
-            fill: none;
-            stroke-width: 1.5
-        }
-        
-        .prod-name {
-            font-family: var(--head);
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            margin-bottom: 0.75rem;
-        }
-        
-        .prod-desc {
-            font-size: 0.875rem;
-            font-weight: 300;
-            color: var(--text2);
-            line-height: 1.75;
-            margin-bottom: 1.75rem;
-        }
-        
-        .prod-tag {
-            margin-bottom: 1.25rem
-        }
-        
-        .prod-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            font-size: 0.8125rem;
-            font-weight: 500;
-            color: var(--green);
-            text-decoration: none;
-            transition: gap .15s;
-        }
-        
-        .prod-link:hover {
-            gap: 0.55rem
-        }
-        
-        .prod-link.muted {
-            color: var(--text3)
-        }
-        
-        .marquee {
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            padding: 0.9rem 0;
-            overflow: hidden;
-            background: var(--bg2);
-        }
-        
-        .marquee-track {
-            display: flex;
-            width: max-content;
-            animation: scroll 28s linear infinite
-        }
-        
-        .marquee-track span {
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--text3);
-            padding: 0 2.5rem;
-            white-space: nowrap;
-            display: flex;
-            align-items: center;
-            gap: 2.5rem;
-        }
-        
-        .marquee-track span::after {
-            content: '·';
-            opacity: 0.4
-        }
-        
-        @keyframes scroll {
-            from {
-                transform: translateX(0)
-            }
-            to {
-                transform: translateX(-50%)
-            }
-        }
-        
-        .approach {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .approach-cell {
-            padding: 4rem 3vw;
-            border-right: 1px solid var(--border);
-        }
-        
-        .approach-cell:last-child {
-            border-right: none
-        }
-        
-        .approach-ico {
-            font-family: var(--head);
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--text3);
-            letter-spacing: -0.04em;
-            margin-bottom: 1.5rem;
-            line-height: 1;
-        }
-        
-        .approach-title {
-            font-family: var(--head);
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            margin-bottom: 0.6rem;
-        }
-        
-        .approach-body {
-            font-size: 0.8375rem;
-            font-weight: 300;
-            color: var(--text2);
-            line-height: 1.7
-        }
-        
-        .cta {
-            padding: 7rem 5vw;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
-            border-bottom: 1px solid var(--border);
-            background: var(--bg2);
-        }
-        
-        .cta h2 {
-            font-family: var(--head);
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            font-weight: 800;
-            letter-spacing: -0.04em;
-            line-height: 1.05;
-        }
-        
-        .cta h2 .accent {
-            color: var(--green)
-        }
-        
-        .cta-right {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: flex-start
-        }
-        
-        .cta-note {
-            font-size: 0.8rem;
-            font-weight: 300;
-            color: var(--text3)
-        }
-        
-        footer {
-            padding: 3.5rem 5vw;
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap: 3rem;
-            border-top: 1px solid var(--border);
-        }
-        
-        .footer-brand .logo {
-            font-size: 1.1rem;
-            margin-bottom: 0.6rem;
-            display: block
-        }
-        
-        .footer-brand p {
-            font-size: 0.8rem;
-            color: var(--text3);
-            font-weight: 300;
-            line-height: 1.6;
-            max-width: 28ch
-        }
-        
-        .footer-col-title {
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--text3);
-            margin-bottom: 1rem;
-        }
-        
-        .footer-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.55rem
-        }
-        
-        .footer-list a {
-            font-size: 0.8375rem;
-            color: var(--text2);
-            text-decoration: none;
-            font-weight: 300;
-            transition: color .15s;
-        }
-        
-        .footer-list a:hover {
-            color: var(--text)
-        }
-        
-        .footer-bottom {
-            padding: 1.5rem 5vw;
-            border-top: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .footer-copy {
-            font-size: 0.75rem;
-            color: var(--text3);
-            font-weight: 300
-        }
-        
-        .footer-inline {
-            display: flex;
-            gap: 1.5rem;
-            list-style: none
-        }
-        
-        .footer-inline a {
-            font-size: 0.75rem;
-            color: var(--text3);
-            text-decoration: none;
-            transition: color .15s
-        }
-        
-        .footer-inline a:hover {
-            color: var(--text2)
-        }
-        
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity .55s ease, transform .55s ease
-        }
-        
-        .reveal.in {
-            opacity: 1;
-            transform: translateY(0)
-        }
-        
-        .d1 {
-            transition-delay: .07s
-        }
-        
-        .d2 {
-            transition-delay: .14s
-        }
-        
-        .d3 {
-            transition-delay: .21s
-        }
-        
-        .hero-tag {
-            animation: up .5s .05s both
-        }
-        
-        h1 {
-            animation: up .6s .12s both
-        }
-        
-        .hero-desc {
-            animation: up .6s .2s both
-        }
-        
-        .hero-btns {
-            animation: up .6s .26s both
-        }
-        
-        .hero-right {
-            animation: up .7s .2s both
-        }
-        
-        @keyframes up {
-            from {
-                opacity: 0;
-                transform: translateY(16px)
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0)
-            }
-        }
-        
-        @media(max-width:920px) {
-            .hero {
-                grid-template-columns: 1fr
-            }
-            .hero-right {
-                display: none
-            }
-            .wedo {
-                grid-template-columns: 1fr
-            }
-            .wedo-left {
-                border-right: none;
-                border-bottom: 1px solid var(--border)
-            }
-            .products-grid {
-                grid-template-columns: 1fr
-            }
-            .prod {
-                border-right: none;
-                border-bottom: 1px solid var(--border)
-            }
-            .approach {
-                grid-template-columns: 1fr
-            }
-            .approach-cell {
-                border-right: none;
-                border-bottom: 1px solid var(--border)
-            }
-            .cta {
-                grid-template-columns: 1fr
-            }
-            footer {
-                grid-template-columns: 1fr 1fr
-            }
-            .nav-links {
-                display: none
-            }
-        }
-        
-        @media(max-width:540px) {
-            footer {
-                grid-template-columns: 1fr
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Orviton | Software That Handles It for You</title>
+<meta name="description" content="Every business has problems that quietly eat your time. Orviton builds simple tools that take them off your plate, so you can get back to what matters. Now open: the ChurnPit waitlist.">
+<meta name="keywords" content="software company, churn detection, customer retention, AI churn prediction, business software, Orviton">
+<meta name="author" content="Orviton">
+<meta name="publisher" content="Orviton">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="language" content="English">
+<link rel="canonical" href="https://orviton.com/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Orviton">
+<meta name="theme-color" content="#00d492">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:site_name" content="Orviton">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orviton.com/">
+<meta property="og:title" content="Orviton | Software That Handles It for You">
+<meta property="og:description" content="Every business has problems that quietly eat your time. Orviton builds simple tools that take them off your plate, so you can get back to what matters.">
+<meta property="og:image" content="https://orviton.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@orvitonhq">
+<meta name="twitter:title" content="Orviton | Software That Handles It for You">
+<meta name="twitter:description" content="Every business has problems that quietly eat your time. Orviton builds simple tools that take them off your plate, so you can get back to what matters.">
+<meta name="twitter:image" content="https://orviton.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Orviton",
+  "url": "https://orviton.com",
+  "logo": "https://orviton.com/logo.png",
+  "description": "Orviton builds simple software that takes business problems off your plate.",
+  "foundingDate": "2024",
+  "founder": { "@type": "Person", "@id": "https://sabbirahmed.im/#person", "name": "Sabbir Ahmed", "url": "https://sabbirahmed.im/" },
+  "sameAs": [
+    "https://www.facebook.com/orvitonhq",
+    "https://x.com/orvitonhq",
+    "https://www.linkedin.com/company/orviton",
+    "https://github.com/sabbirahmed-im",
+    "https://www.crunchbase.com/organization/orviton"
+  ],
+  "contactPoint": { "@type": "ContactPoint", "email": "hello@orviton.com", "contactType": "Customer Service" },
+  "address": { "@type": "PostalAddress", "addressCountry": "BD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ChurnPit",
+  "description": "AI churn detection software that emails you reports and high risk customer data directly, no dashboard required.",
+  "url": "https://churnpit.orviton.com",
+  "brand": { "@type": "Brand", "name": "Orviton" },
+  "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "0", "availability": "https://schema.org/PreOrder" }
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{max-width:100%;overflow-x:hidden}
+:root{--bg:#080808;--bg2:#111;--bg3:#181818;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.04);--text:#f0ede8;--text2:rgba(240,237,232,.55);--text3:rgba(240,237,232,.28);--green:#00d492;--green-dim:rgba(0,212,146,.1);--green-border:rgba(0,212,146,.2);--head:'Syne',sans-serif;--body:'DM Sans',sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--border);background:rgba(8,8,8,.85);backdrop-filter:blur(20px)}
+.logo{font-family:var(--head);font-size:1.2rem;font-weight:800;letter-spacing:-.03em;color:var(--text);text-decoration:none}
+.logo span{color:var(--green)}
+.nav-links{display:flex;gap:0;list-style:none}
+.nav-links a{font-size:.8rem;color:var(--text2);text-decoration:none;padding:0 1.2rem;height:60px;display:flex;align-items:center;border-left:1px solid var(--border2);transition:color .15s,background .15s;letter-spacing:.01em}
+.nav-links a:hover{color:var(--text);background:rgba(255,255,255,.03)}
+.nav-cta{font-size:.8rem;font-weight:600;background:var(--green);color:#000;padding:.5rem 1.2rem;border-radius:6px;text-decoration:none;transition:opacity .15s,transform .15s;letter-spacing:-.01em}
+.nav-cta:hover{opacity:.88;transform:translateY(-1px)}
+.hero{min-height:100vh;padding-top:60px;display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)}
+.hero-left{padding:5rem 5vw;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--border)}
+.hero-tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:2.5rem;animation:up .5s .05s both}
+.hero-tag::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px var(--green-dim);animation:blink 2s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+h1{font-family:var(--head);font-size:clamp(2.8rem,5.5vw,5rem);font-weight:800;letter-spacing:-.04em;line-height:1.02;color:var(--text);max-width:15ch;animation:up .6s .12s both}
+h1 .accent{color:var(--green)}
+h1 .dim{color:var(--text3)}
+.hero-desc{margin-top:2rem;font-size:1rem;font-weight:300;color:var(--text2);line-height:1.8;max-width:46ch;animation:up .6s .2s both}
+.hero-btns{display:flex;align-items:center;gap:1rem;margin-top:2.75rem;flex-wrap:wrap;animation:up .6s .26s both}
+.btn-solid{display:inline-flex;align-items:center;gap:.4rem;background:var(--text);color:var(--bg);font-size:.875rem;font-weight:600;padding:.75rem 1.5rem;border-radius:7px;text-decoration:none;transition:opacity .15s,transform .15s}
+.btn-solid:hover{opacity:.88;transform:translateY(-1px)}
+.btn-green{background:var(--green);color:#000;font-weight:700}
+.btn-ghost{display:inline-flex;align-items:center;gap:.4rem;color:var(--text2);font-size:.875rem;text-decoration:none;transition:color .15s;border:1px solid var(--border);padding:.75rem 1.4rem;border-radius:7px}
+.btn-ghost:hover{color:var(--text);border-color:rgba(255,255,255,.15)}
+.hero-right{padding:5rem 4vw;display:flex;flex-direction:column;justify-content:center;gap:1rem;background:var(--bg2);animation:up .7s .2s both}
+.hero-right-label{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem}
+.pcard{border:1px solid var(--border);border-radius:12px;padding:1.75rem;background:var(--bg);transition:border-color .2s,background .2s}
+.pcard:hover{border-color:rgba(255,255,255,.13);background:var(--bg3)}
+.pcard.featured{border-color:var(--green-border);background:var(--bg3)}
+.pcard.off{opacity:.6}
+.pcard-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.pcard-name{font-family:var(--head);font-size:1.3rem;font-weight:700;letter-spacing:-.03em}
+.pill{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .7rem;border-radius:100px}
+.pill-live{background:rgba(0,212,146,.12);color:var(--green);border:1px solid var(--green-border)}
+.pill-next{background:rgba(255,255,255,.05);color:var(--text3);border:1px solid var(--border)}
+.pcard-desc{font-size:.8375rem;font-weight:300;color:var(--text2);line-height:1.7;margin-bottom:1.2rem}
+.pcard-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.8rem;font-weight:500;color:var(--green);text-decoration:none;transition:gap .15s}
+.pcard-link:hover{gap:.5rem}
+.wedo{display:grid;grid-template-columns:5fr 7fr;border-bottom:1px solid var(--border)}
+.wedo-left{padding:5.5rem 5vw;border-right:1px solid var(--border)}
+.wedo-right{padding:5.5rem 4vw;display:flex;flex-direction:column}
+.sec-kicker{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:1.5rem}
+.sec-h{font-family:var(--head);font-size:clamp(1.8rem,3vw,2.75rem);font-weight:700;letter-spacing:-.03em;line-height:1.08;margin-bottom:1.5rem;max-width:22ch}
+.sec-h em{font-style:normal;color:var(--text2)}
+.sec-body{font-size:.9375rem;font-weight:300;color:var(--text2);line-height:1.8;max-width:46ch}
+.sec-body+.sec-body{margin-top:1.1rem}
+.pillar{display:grid;grid-template-columns:2.5rem 1fr;gap:1.25rem;padding:1.75rem 0;border-top:1px solid var(--border);align-items:start}
+.pillar:last-child{border-bottom:1px solid var(--border)}
+.pillar-num{font-family:var(--head);font-size:.8rem;font-weight:700;color:var(--text3);padding-top:.15rem;letter-spacing:.05em}
+.pillar-title{font-size:.9375rem;font-weight:600;margin-bottom:.35rem;letter-spacing:-.01em}
+.pillar-desc{font-size:.8375rem;font-weight:300;color:var(--text2);line-height:1.65}
+.products{border-bottom:1px solid var(--border)}
+.products-head{padding:4rem 5vw 3rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.prod{padding:3rem 3vw;border-right:1px solid var(--border);transition:background .2s}
+.prod:hover{background:var(--bg2)}
+.prod:last-child{border-right:none}
+.prod.off{opacity:.6}
+.prod-ico{width:42px;height:42px;border:1px solid var(--border);border-radius:9px;display:flex;align-items:center;justify-content:center;margin-bottom:2rem;background:var(--bg2)}
+.prod-ico svg{width:20px;height:20px;stroke:var(--text2);fill:none;stroke-width:1.5}
+.prod-name{font-family:var(--head);font-size:1.4rem;font-weight:700;letter-spacing:-.03em;margin-bottom:.75rem}
+.prod-desc{font-size:.875rem;font-weight:300;color:var(--text2);line-height:1.75;margin-bottom:1.75rem}
+.prod-tag{margin-bottom:1.25rem}
+.prod-link{display:inline-flex;align-items:center;gap:.35rem;font-size:.8125rem;font-weight:500;color:var(--green);text-decoration:none;transition:gap .15s}
+.prod-link:hover{gap:.55rem}
+.prod-link.muted{color:var(--text3)}
+.marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:.9rem 0;overflow:hidden;background:var(--bg2)}
+.marquee-track{display:flex;width:max-content;animation:scroll 28s linear infinite}
+.marquee-track span{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);padding:0 2.5rem;white-space:nowrap;display:flex;align-items:center;gap:2.5rem}
+.marquee-track span::after{content:'·';opacity:.4}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.approach{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--border)}
+.approach-cell{padding:4rem 3vw;border-right:1px solid var(--border)}
+.approach-cell:last-child{border-right:none}
+.approach-ico{font-family:var(--head);font-size:2rem;font-weight:800;color:var(--text3);letter-spacing:-.04em;margin-bottom:1.5rem;line-height:1}
+.approach-title{font-family:var(--head);font-size:1rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.6rem}
+.approach-body{font-size:.8375rem;font-weight:300;color:var(--text2);line-height:1.7}
+.cta{padding:7rem 5vw;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;border-bottom:1px solid var(--border);background:var(--bg2)}
+.cta h2{font-family:var(--head);font-size:clamp(2rem,4vw,3.5rem);font-weight:800;letter-spacing:-.04em;line-height:1.05}
+.cta h2 .accent{color:var(--green)}
+.cta-right{display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
+.cta-right p.lead{font-size:.9375rem;font-weight:300;color:var(--text2);line-height:1.75;max-width:40ch}
+.cta-note{font-size:.8rem;font-weight:300;color:var(--text3)}
+footer{padding:3.5rem 5vw;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;border-top:1px solid var(--border)}
+.footer-brand .logo{font-size:1.1rem;margin-bottom:.6rem;display:block}
+.footer-brand p{font-size:.8rem;color:var(--text3);font-weight:300;line-height:1.6;max-width:28ch}
+.footer-brand p.footer-tag{font-family:var(--head);font-size:1.05rem;font-weight:700;color:var(--text);letter-spacing:-.02em;line-height:1.25;margin-bottom:.8rem}
+.footer-brand p+p{margin-top:.8rem}
+.footer-brand p a{color:var(--text2)}
+.footer-col-title{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:1rem}
+.footer-list{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.footer-list a{font-size:.8375rem;color:var(--text2);text-decoration:none;font-weight:300;transition:color .15s}
+.footer-list a:hover{color:var(--text)}
+.footer-bottom{padding:1.5rem 5vw;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.75rem;color:var(--text3);font-weight:300}
+.footer-inline{display:flex;gap:1.5rem;list-style:none}
+.footer-inline a{font-size:.75rem;color:var(--text3);text-decoration:none;transition:color .15s}
+.footer-inline a:hover{color:var(--text2)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:920px){
+.hero,.wedo,.products-grid,.approach,.cta{grid-template-columns:1fr}
+.hero-right,.nav-links{display:none}
+.wedo-left{border-right:none;border-bottom:1px solid var(--border)}
+.prod,.approach-cell{border-right:none;border-bottom:1px solid var(--border)}
+footer{grid-template-columns:1fr 1fr}
+}
+@media(max-width:540px){footer{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
 
-    <nav>
-        <a href="#" class="logo">Orvi<span>ton</span></a>
-        <ul class="nav-links">
-            <li><a href="#what">What we do</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#approach">Approach</a></li>
-        </ul>
-        <a href="https://leadleap.app" target="_blank" class="nav-cta">Try LeadLeap →</a>
-    </nav>
+<nav>
+  <a href="#" class="logo">Orvi<span>ton</span></a>
+  <ul class="nav-links">
+    <li><a href="#what">What we do</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#approach">Approach</a></li>
+  </ul>
+  <a href="https://churnpit.orviton.com" target="_blank" rel="noopener" class="nav-cta">Join ChurnPit waitlist →</a>
+</nav>
 
-    <section class="hero">
-        <div class="hero-left">
-            <div class="hero-tag">Independent Software</div>
-            <h1>Simple <span class="accent">tools.</span><br>Complex problems<br><span class="dim">solved.</span></h1>
-            <p class="hero-desc">
-                Orviton builds focused software for the problems other companies over-engineer. Bootstrap-backed. Production-ready. Zero bloat.
-            </p>
-            <div class="hero-btns">
-                <a href="#products" class="btn-solid">
-          Our products
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M2 7h10M8 3l4 4-4 4" />
-          </svg>
-        </a>
-                <a href="#what" class="btn-ghost">Learn more</a>
-            </div>
-        </div>
-
-        <div class="hero-right">
-            <div class="hero-right-label">Our products</div>
-            <div class="pcard featured">
-                <div class="pcard-top">
-                    <div class="pcard-name">LeadLeap</div>
-                    <span class="pill pill-live">Live · leadleap.app</span>
-                </div>
-                <p class="pcard-desc">Captures website leads automatically, no form submission needed. Add one script and get a CRM, lead inbox, and email automation built in.</p>
-                <a href="https://leadleap.app" target="_blank" class="pcard-link">Visit leadleap.app →</a>
-            </div>
-            <div class="pcard">
-                <div class="pcard-top">
-                    <div class="pcard-name">ChurnPit</div>
-                    <span class="pill pill-next">Waitlist open</span>
-                </div>
-                <p class="pcard-desc">AI churn detection. It emails you the report and the high risk customer data directly, so there's no dashboard to check.
-                </p>
-                <a href="https://churnpit.orviton.com" target="_blank" class="pcard-link">Join waitlist →</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="wedo" id="what">
-        <div class="wedo-left">
-            <div class="sec-kicker">What we do</div>
-            <h2 class="sec-h">Focused.<br><em>Independent.<br>Uncompromising.</em></h2>
-            <p class="sec-body">We build software that solves one problem better than anyone else. Not platforms. Not all-in-one suites. Every product we ship is scoped tightly, works reliably, and gets out of your way.</p>
-            <p class="sec-body">Bootstrap-backed and independent. We answer to our users, not investors, and we build what's actually useful.</p>
-        </div>
-        <div class="wedo-right">
-            <div class="sec-kicker" style="padding-top:0">How we think</div>
-            <div class="pillar reveal">
-                <div class="pillar-num">01</div>
-                <div>
-                    <div class="pillar-title">Identify real friction</div>
-                    <p class="pillar-desc">Every product starts with a workflow that's painfully inefficient. We don't build features looking for problems, we find problems worth solving.</p>
-                </div>
-            </div>
-            <div class="pillar reveal d1">
-                <div class="pillar-num">02</div>
-                <div>
-                    <div class="pillar-title">Ship early, refine constantly</div>
-                    <p class="pillar-desc">Real products come from shipping fast and learning from actual users. We'd rather have something imperfect in production than perfect on paper.</p>
-                </div>
-            </div>
-            <div class="pillar reveal d2">
-                <div class="pillar-num">03</div>
-                <div>
-                    <div class="pillar-title">Keep it simple</div>
-                    <p class="pillar-desc">Complexity is a cost. Every feature we add has to earn its place. Good software feels obvious to use.</p>
-                </div>
-            </div>
-            <div class="pillar reveal d3">
-                <div class="pillar-num">04</div>
-                <div>
-                    <div class="pillar-title">Build to last</div>
-                    <p class="pillar-desc">Production-grade infrastructure, reliable uptime, sustainable pricing. We're not selling a trend, we're building businesses that endure.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="products" id="products">
-        <div class="products-head">
-            <div>
-                <div class="sec-kicker">Products</div>
-                <h2 class="sec-h" style="margin-bottom:0;font-size:clamp(1.6rem,2.5vw,2.2rem)">What we've shipped</h2>
-            </div>
-            <p style="font-size:0.875rem;color:var(--text2);max-width:38ch;font-weight:300;line-height:1.75">
-                Each product targets one specific problem. Built for simplicity. Built to scale.
-            </p>
-        </div>
-        <div class="products-grid">
-            <div class="prod reveal">
-                <div class="prod-ico">
-                    <svg viewBox="0 0 24 24">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-          </svg>
-                </div>
-                <div class="prod-tag"><span class="pill pill-live">Live</span></div>
-                <div class="prod-name">LeadLeap</div>
-                <p class="prod-desc" style="margin-bottom:0.6rem;font-weight:500;color:var(--text)">Captures website leads automatically, no form submission required.</p>
-                <p class="prod-desc">One script gives you a CRM, lead inbox, and email automation, so every visitor turns into a tracked lead you can follow up with. Free to start.</p>
-                <a href="https://leadleap.app" target="_blank" class="prod-link">leadleap.app →</a>
-            </div>
-            <div class="prod reveal d1" style="background:var(--bg2)">
-                <div class="prod-ico">
-                    <svg viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-            <path d="M11 8v6M8 11h6" />
-          </svg>
-                </div>
-                <div class="prod-tag"><span class="pill pill-next">Waitlist open</span></div>
-                <div class="prod-name">ChurnPit</div>
-                <p class="prod-desc" style="margin-bottom:0.6rem;font-weight:500;color:var(--text)">AI churn detection with zero dashboard, just email reports.</p>
-                <p class="prod-desc">ChurnPit watches your customer data and emails you reports plus the high risk customer list, so you know who's about to churn without logging into anything.</p>
-                <a href="https://churnpit.orviton.com" target="_blank" class="prod-link">churnpit.orviton.com →</a>
-            </div>
-            <div class="prod reveal d2">
-                <div class="prod-ico" style="border-style:dashed;background:transparent">
-                    <svg viewBox="0 0 24 24">
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-                </div>
-                <div class="prod-tag"><span class="pill pill-next">Future</span></div>
-                <div class="prod-name">And more</div>
-                <p class="prod-desc">A portfolio of focused tools. Each one better than the bloated alternatives. No platforms. Just solutions.</p>
-                <span class="prod-link muted">Stay tuned</span>
-            </div>
-        </div>
-    </section>
-
-    <div class="marquee">
-        <div class="marquee-track">
-            <span>Lead capture</span>
-            <span>CRM</span>
-            <span>Email automation</span>
-            <span>Churn detection</span>
-            <span>SMTP delivery</span>
-            <span>Bootstrap-backed</span>
-            <span>Independent Software</span>
-            <span>No bloat</span>
-            <span>Production-ready</span>
-            <span>Lead capture</span>
-            <span>CRM</span>
-            <span>Email automation</span>
-            <span>Churn detection</span>
-            <span>SMTP delivery</span>
-            <span>Bootstrap-backed</span>
-            <span>Independent Software</span>
-            <span>No bloat</span>
-            <span>Production-ready</span>
-        </div>
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">ChurnPit waitlist is open</div>
+    <h1>Software that<br><span class="accent">handles it</span><br><span class="dim">for you.</span></h1>
+    <p class="hero-desc">Every business has problems that quietly eat your time. Orviton builds simple tools that take them off your plate, so you can get back to what matters.</p>
+    <div class="hero-btns">
+      <a href="https://churnpit.orviton.com" target="_blank" rel="noopener" class="btn-solid btn-green">Join the ChurnPit waitlist →</a>
+      <a href="#what" class="btn-ghost">Learn more</a>
     </div>
-
-    <section class="approach" id="approach">
-        <div class="approach-cell reveal">
-            <div class="approach-ico">01</div>
-            <div class="approach-title">Bootstrap-backed</div>
-            <p class="approach-body">No VC pressure. No investor agendas. We answer to our users and build what's actually useful.
-            </p>
-        </div>
-        <div class="approach-cell reveal d1">
-            <div class="approach-ico">02</div>
-            <div class="approach-title">Production-grade from day one</div>
-            <p class="approach-body">Docker, CI/CD, SSL, proper infrastructure. Every tool ships with reliability your business can depend on.</p>
-        </div>
-        <div class="approach-cell reveal d2">
-            <div class="approach-ico">03</div>
-            <div class="approach-title">Pricing that makes sense</div>
-            <p class="approach-body">Free plans that work. Paid plans for real businesses. We grow with our customers, we don't squeeze them.</p>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div>
-            <h2 class="reveal">Start building<br>with <span class="accent">LeadLeap</span><br>today.</h2>
-        </div>
-        <div class="cta-right reveal d1">
-            <p style="font-size:0.9375rem;font-weight:300;color:var(--text2);line-height:1.75;max-width:40ch">
-                Free to start. No credit card required. Capture leads from your website in 5 minutes.
-            </p>
-            <a href="https://leadleap.app" target="_blank" class="btn-solid" style="background:var(--green);color:#000;font-weight:700">
-        Get started free →
-      </a>
-            <p class="cta-note">Free plan · No credit card · 5-minute setup</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-brand">
-            <a href="#" class="logo">Orvi<span>ton</span></a>
-            <p>Independent software company. Building focused tools that solve real problems. Simple. Reliable. Uncompromising.</p>
-        </div>
-        <div>
-            <div class="footer-col-title">Products</div>
-            <ul class="footer-list">
-                <li><a href="https://leadleap.app" target="_blank">LeadLeap</a></li>
-                <li><a href="https://churnpit.orviton.com" target="_blank">ChurnPit</a></li>
-            </ul>
-        </div>
-        <div>
-            <div class="footer-col-title">Company</div>
-            <ul class="footer-list">
-                <li><a href="#what">About</a></li>
-                <li><a href="mailto:hello@orviton.com">Contact</a></li>
-                <li><a href="https://leadleap.app/privacy" target="_blank">Privacy</a></li>
-                <li><a href="https://leadleap.app/terms" target="_blank">Terms</a></li>
-            </ul>
-        </div>
-        <div>
-            <div class="footer-col-title">Connect</div>
-            <ul class="footer-list">
-                <li><a href="https://www.linkedin.com/in/sabbirr-ahmdd" target="_blank">LinkedIn</a></li>
-                <li><a href="https://x.com/sabbirr_ahmdd" target="_blank">X (Twitter)</a></li>
-                <li><a href="https://github.com/sabbirr-ahmdd" target="_blank">GitHub</a></li>
-                <li><a href="https://medium.com/@sabbirr_ahmdd" target="_blank">Medium</a></li>
-                <li><a href="https://dev.to/sabbirr_ahmdd" target="_blank">Dev.to</a></li>
-                <li><a href="https://www.reddit.com/user/sabbirr_ahmdd" target="_blank">Reddit</a></li>
-                <li><a href="https://www.crunchbase.com/organization/orviton" target="_blank">Crunchbase</a></li>
-            </ul>
-        </div>
-    </footer>
-    <div class="footer-bottom">
-        <p class="footer-copy">© 2025 Orviton. All rights reserved.</p>
-        <ul class="footer-inline">
-            <li><a href="https://leadleap.app/privacy" target="_blank">Privacy</a></li>
-            <li><a href="https://leadleap.app/terms" target="_blank">Terms</a></li>
-            <li><a href="mailto:hello@orviton.com">Contact</a></li>
-        </ul>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-label">Our products</div>
+    <div class="pcard featured">
+      <div class="pcard-top"><div class="pcard-name">ChurnPit</div><span class="pill pill-live">Waitlist open</span></div>
+      <p class="pcard-desc">AI churn detection. It emails you the report and the high risk customer data directly, so there's no dashboard to check.</p>
+      <a href="https://churnpit.orviton.com" target="_blank" rel="noopener" class="pcard-link">Join waitlist →</a>
     </div>
+    <div class="pcard off">
+      <div class="pcard-top"><div class="pcard-name">LeadLeap</div><span class="pill pill-next">Discontinued</span></div>
+      <p class="pcard-desc">This product has been discontinued.</p>
+      <a href="https://leadleap.app" target="_blank" rel="noopener" class="pcard-link">Visit leadleap.app →</a>
+    </div>
+  </div>
+</section>
 
-    <script>
-        const io = new IntersectionObserver(entries => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('in');
-                    io.unobserve(e.target)
-                }
-            })
-        }, {
-            threshold: 0.1
-        });
-        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-    </script>
+<section class="wedo" id="what">
+  <div class="wedo-left">
+    <div class="sec-kicker">What we do</div>
+    <h2 class="sec-h">Built to make<br><em>your work easier.</em></h2>
+    <p class="sec-body">Orviton is a software company founded by Sabbir Ahmed. We build tools that take care of the problems slowing businesses down, in a way anyone can understand and use from day one.</p>
+    <p class="sec-body">We fund Orviton ourselves, so we answer to our customers and build only what is genuinely useful.</p>
+  </div>
+  <div class="wedo-right">
+    <div class="sec-kicker">How we think</div>
+    <div class="pillar reveal"><div class="pillar-num">01</div><div><div class="pillar-title">Start with a real problem</div><p class="pillar-desc">Every product begins with a problem we have seen businesses struggle with. We build to solve it, not to add features.</p></div></div>
+    <div class="pillar reveal d1"><div class="pillar-num">02</div><div><div class="pillar-title">Launch early, improve often</div><p class="pillar-desc">We release early and learn from real customers. A working product that people use teaches us more than a perfect plan.</p></div></div>
+    <div class="pillar reveal d2"><div class="pillar-num">03</div><div><div class="pillar-title">Keep it easy</div><p class="pillar-desc">If a tool needs a manual, we are not done yet. Everything we make should feel clear from the first minute.</p></div></div>
+    <div class="pillar reveal d3"><div class="pillar-num">04</div><div><div class="pillar-title">Build for the long term</div><p class="pillar-desc">Reliable systems and fair pricing. We are not chasing a trend. We want to be a company you can depend on for years.</p></div></div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="products-head">
+    <div>
+      <div class="sec-kicker">Products</div>
+      <h2 class="sec-h" style="margin-bottom:0;font-size:clamp(1.6rem,2.5vw,2.2rem)">What we build</h2>
+    </div>
+    <p style="font-size:.875rem;color:var(--text2);max-width:38ch;font-weight:300;line-height:1.75">Each product solves one clear problem. Built to be easy to use and ready to grow.</p>
+  </div>
+  <div class="products-grid">
+    <div class="prod reveal" style="background:var(--bg2)">
+      <div class="prod-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+      <div class="prod-tag"><span class="pill pill-live">Waitlist open</span></div>
+      <div class="prod-name">ChurnPit</div>
+      <p class="prod-desc" style="margin-bottom:.6rem;font-weight:500;color:var(--text)">Find out which customers may leave, by email.</p>
+      <p class="prod-desc">ChurnPit watches your customer data and emails you a report with the customers most at risk of leaving, so you can act early without logging into another dashboard.</p>
+      <a href="https://churnpit.orviton.com" target="_blank" rel="noopener" class="prod-link">Join the waitlist →</a>
+    </div>
+    <div class="prod off reveal d1">
+      <div class="prod-ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+      <div class="prod-tag"><span class="pill pill-next">Discontinued</span></div>
+      <div class="prod-name">LeadLeap</div>
+      <p class="prod-desc">This product has been discontinued and is no longer available.</p>
+      <a href="https://leadleap.app" target="_blank" rel="noopener" class="prod-link">leadleap.app →</a>
+    </div>
+    <div class="prod reveal d2">
+      <div class="prod-ico" style="border-style:dashed;background:transparent"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+      <div class="prod-tag"><span class="pill pill-next">Future</span></div>
+      <div class="prod-name">And more</div>
+      <p class="prod-desc">We are building more tools for the problems businesses face every day. Stay tuned.</p>
+      <span class="prod-link muted">Stay tuned</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Churn detection</span><span>AI reports</span><span>Customer retention</span><span>Self-funded</span><span>Easy to use</span><span>Reliable</span>
+    <span>Churn detection</span><span>AI reports</span><span>Customer retention</span><span>Self-funded</span><span>Easy to use</span><span>Reliable</span>
+  </div>
+</div>
+
+<section class="approach" id="approach">
+  <div class="approach-cell reveal"><div class="approach-ico">01</div><div class="approach-title">Self-funded</div><p class="approach-body">No outside investors. We answer to our customers and build what they actually need.</p></div>
+  <div class="approach-cell reveal d1"><div class="approach-ico">02</div><div class="approach-title">Reliable from day one</div><p class="approach-body">Secure connections, tested releases and proper infrastructure, so your business can depend on every tool.</p></div>
+  <div class="approach-cell reveal d2"><div class="approach-ico">03</div><div class="approach-title">Pricing that makes sense</div><p class="approach-body">Plans that make sense for real businesses. We grow when our customers grow.</p></div>
+</section>
+
+<section class="cta">
+  <div><h2 class="reveal">Know who's<br>about to <span class="accent">churn</span><br>before they go.</h2></div>
+  <div class="cta-right reveal d1">
+    <p class="lead">Join the ChurnPit waitlist and get churn reports and high risk customers straight to your inbox. No dashboard to check.</p>
+    <a href="https://churnpit.orviton.com" target="_blank" rel="noopener" class="btn-solid btn-green">Join the waitlist →</a>
+    <p class="cta-note">Waitlist open · Email reports · No dashboard</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">
+    <a href="#" class="logo">Orvi<span>ton</span></a>
+    <p class="footer-tag">Software that handles it for you.</p>
+    <p>Building simple tools that solve real business problems.</p>
+    <p>Founded by <a href="https://sabbirahmed.im/" rel="noopener">Sabbir Ahmed</a></p>
+  </div>
+  <div>
+    <div class="footer-col-title">Products</div>
+    <ul class="footer-list">
+      <li><a href="https://churnpit.orviton.com" target="_blank" rel="noopener">ChurnPit</a></li>
+      <li><a href="https://leadleap.app" target="_blank" rel="noopener">LeadLeap (Discontinued)</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Company</div>
+    <ul class="footer-list">
+      <li><a href="#what">About</a></li>
+      <li><a href="mailto:hello@orviton.com">Contact</a></li>
+      <li><a href="https://leadleap.app/privacy" target="_blank" rel="noopener">Privacy</a></li>
+      <li><a href="https://leadleap.app/terms" target="_blank" rel="noopener">Terms</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Connect</div>
+    <ul class="footer-list">
+      <li><a href="https://www.facebook.com/orvitonhq" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://x.com/orvitonhq" target="_blank" rel="noopener">X (Twitter)</a></li>
+      <li><a href="https://www.linkedin.com/company/orviton" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/sabbirahmed-im" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.crunchbase.com/organization/orviton" target="_blank" rel="noopener">Crunchbase</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p class="footer-copy">© 2026 Orviton. All rights reserved.</p>
+  <ul class="footer-inline">
+    <li><a href="https://leadleap.app/privacy" target="_blank" rel="noopener">Privacy</a></li>
+    <li><a href="https://leadleap.app/terms" target="_blank" rel="noopener">Terms</a></li>
+    <li><a href="mailto:hello@orviton.com">Contact</a></li>
+  </ul>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
-
 </html>
