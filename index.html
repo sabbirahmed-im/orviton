@@ -382,9 +382,9 @@ const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.tar
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 (function(){
-  var KEY='orviton_popup_seen',DAYS=1,pop=document.getElementById('pop');
+  var KEY='orviton_popup_seen',HOURS=1,pop=document.getElementById('pop');
   if(!pop)return;
-  try{var t=+localStorage.getItem(KEY);if(t&&Date.now()-t<DAYS*864e5)return}catch(e){}
+  try{var t=+localStorage.getItem(KEY);if(t&&Date.now()-t<HOURS*36e5)return}catch(e){}
   function close(){
     pop.classList.remove('show');pop.hidden=true;
     try{localStorage.setItem(KEY,String(Date.now()))}catch(e){}
